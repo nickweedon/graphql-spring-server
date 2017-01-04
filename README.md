@@ -12,7 +12,7 @@ NB: Probably easiest at the moment to just run it through the IntelliJ IDE since
 
 Dependencies
 ------------
-Install and run the RabbitMQ docker image by running the docker script:
+Install and run the RabbitMQ docker image (if not already running) by running the docker script:
      
     #!/bin/bash -e
     
@@ -62,6 +62,8 @@ Install and run the PostgreSQL database by running:
     -p $DB_PORT:5432 \
     postgres:9.6.1
     
+Set the PostGreSQL username/password in the Spring Boot 'application.properties' file and create the same credentials in PostGreSQL.
+
 
 NB: The Postgres code can also be removed since it is not needed for the purpose of demonstrating or working with GraphQL.
 
